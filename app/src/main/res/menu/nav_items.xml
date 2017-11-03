@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeOption"
+            android:icon="@mipmap/homexhdpi"
+            android:title="Home"></item>
+        <item
+            android:id="@+id/first"
+            android:icon="@mipmap/imageaddxhdpi"
+            android:title="Add a Book"
+            >
+        </item>
+        <item
+            android:id="@+id/second"
+            android:icon="@mipmap/deletebookxhdpi"
+            android:title="Delete a book"
+            ></item>
+        <item
+            android:id="@+id/third"
+            android:icon="@mipmap/updatehdpi"
+            android:title="Update a book"
+            ></item>
+        <item
+            android:id="@+id/similiarbooksearch"
+            android:icon="@mipmap/searchforbookxhdpi"
+            android:title="Search for similiar books in your list"
+            >
+        </item>
+    </group>
+
+</menu>

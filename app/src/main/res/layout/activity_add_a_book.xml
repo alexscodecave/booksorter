@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/navigationDrawerLayout"
+    tools:context="com.example.alexb.booksorter.AddABook">
+
+<FrameLayout
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/relativeContainer"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Add a book:"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtViewBookName"
+            android:text="@string/BookInformationBookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtBookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtViewBookYear"
+            android:text="@string/BookInformationBookYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtBookYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtViewBookAuthor"
+            android:layout_width="wrap_content"
+            android:text="Book Author:"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtViewBookPages"
+            android:text="@string/BookInformationBookPages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtBookPages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtViewBookCurrentPage"
+            android:text="@string/BookInformationBookCurrentPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtBookCurrentPage"
+            android:layout_above="@+id/txtViewBookDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtViewBookDesc"
+            android:text="@string/BookInformationBookDescription"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/txtBookDescription"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtBookDescription"
+            android:layout_above="@+id/btnSaveBookData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38" />
+
+        <Button
+            android:id="@+id/btnAddImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Image"/>
+
+        <ImageView
+            android:id="@+id/imgViewFromGallery"
+            android:layout_width="match_parent"
+            android:src="@drawable/defaultbookimagemdpi"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btnSaveBookData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:onClick="save"
+            android:text="@string/saveBookInformation" />
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_items" />
+
+
+</android.support.v4.widget.DrawerLayout>
